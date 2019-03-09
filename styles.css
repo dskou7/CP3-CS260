@@ -1,0 +1,15 @@
+p.footer {
+  color: #CCC;
+  width: 100% !important;
+  text-align: center;
+}
+
+body {
+  background-image: url("/images/d2_blank.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: white !important;
+  padding-left: 30px;
+  padding-right: 30px;
+}
