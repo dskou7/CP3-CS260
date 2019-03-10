@@ -8,21 +8,25 @@
 </head>
 
 <body>
-  <h1>CP3</h1>
+  <h1>Destiny 2 Profile Search</h1>
   <div id="app">
+    <p>Seach for a name,<a href="https://guardian.gg/2"> or copy one from guardian.gg</a></p>
     <form v-on:submit.prevent="searchName">
       <input type="text" v-model="searchText">
       <button type="submit">Search</button>
     </form>
-    <p>Platform ID: {{ platformID }} </p>
-    <p>Player ID: {{ playerID }} </p>
-    <!--
+    <div class="profile"><img v-bind:src= "platformIcon" /> Display Name: {{ playerName }} </div>
+
     <ul>
-      <li v-for="item in games">
-        <label v-bind:class="{ completed: item.completed }">{{ item.text }}</label>
+      <li v-for="char in characters">
+        <div class=charEmblem :style="{ 'background-image': 'url(' + char.emblemBackgroundPath + ')' }">{{char.lightLevel}}&emsp;</div>
+        <div class="details">
+        <p> Level {{char.baseLevel}} {{char.gender}} {{char.race}} {{char.d2class}}</p>
+        <p> Total playtime: {{char.minutesPlayed}} minutes</p>
+        </div>
       </li>
     </ul>
-    -->
+
   </div>
   <nav class="navbar fixed-bottom navbar-dark bg-dark">
     <p class="footer">

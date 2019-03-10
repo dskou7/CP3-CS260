@@ -10,6 +10,42 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-color: white !important;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.charEmblem {
+  width: 100%;
+  min-height: 100px;
+  font-size: 3em;
+  color: #ffff00;
+  text-shadow: 2px 2px #000000;
+  text-align: right;
+  background-repeat: no-repeat;
+  /*background-position: center;*/
+}
+
+.profile{
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 500px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+li {
+    /*background: #fff;*/
+    background-color: rgba(1, 1, 1, 0.3);
+    width: 500px;
+    min-height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    align-items: center;
+    margin-left: 0px;
 }
